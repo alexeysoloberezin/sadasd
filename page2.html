@@ -32,66 +32,71 @@
     </div>     
     
     <header class="header">      
-      <div class="container-big">
-        <div class=" header__row header__row-line">
-           <div class="burger">
-              <span class="burger-line__top"></span>
-              <span class="burger-line__center"></span>
-              <span class="burger-line__bottom"></span>
-            </div>
-            <a href="/" class="header__logo">
-              <img src="image/logo.svg" alt="">
-            </a>
-            <nav class="header__nav">
-              <ul class="header__list">
-                <li class="header__item">                                   
-                  <a class="header__link" href="#">Результаты</a>
-                </li>
-                <li class="header__item">
-                  <a class="header__link" href="#photo">Формат&nbsp;обучения</a>
-                </li>
-                <li class="header__item">
-                  <a class="header__link" href="#video">Преподаватели</a>
-                </li>
-                <li class="header__item">
-                  <a class="header__link" href="#certorder">Расписание</a>
-                </li>
-                <li class="header__item">
-                  <a class="header__link" href="#contacts">Программа</a>
-                </li>
-                <li class="header__item">
-                  <a class="header__link" href="#payment">Отзывы</a>
-                </li>
-                <li class="header__item">
-                  <a class="header__link" href="#payment">Контакты</a>
-                </li>
-                <li class="header__item">
-                  <a class="header__link blue" href="#payment">Записаться<img src="image/icon/icon_bron.svg" alt=""></a>
-                </li>
-              </ul>
-            </nav>
-            <div class="header__wrapper ">                  
-              <p class="header__call">Заказать<span>&nbsp;</span> звонок</p>
-              <a href="tel:88004444351" class="header__phone">8 (800) 444-43-51</a>
-            </div>
-        </div>
-       
-      </div>
-      <div class="breads">
+      <div class="header__top">
         <div class="container-big">
-          <ul class="breads__list">
-            <li>
-              <a href="/"><img src="image/svg/home.svg" alt=""></a>
-            </li>
-            <li>
-              <a href="/">Курсы</a>
-            </li>
-            <li>
-              <a href="/">Избавиться от страха</a>
-            </li>
-          </ul>         
+          <div class=" header__row header__row-line">
+            <div class="burger">
+                <span class="burger-line__top"></span>
+                <span class="burger-line__center"></span>
+                <span class="burger-line__bottom"></span>
+              </div>
+              <a href="/" class="header__logo">
+                <img src="image/logo.svg" alt="">
+              </a>
+              <nav class="header__nav">
+                <ul class="header__list">
+                  <li class="header__item">                                   
+                    <a class="header__link" href="#">Результаты</a>
+                  </li>
+                  <li class="header__item">
+                    <a class="header__link" href="#photo">Формат&nbsp;обучения</a>
+                  </li>
+                  <li class="header__item">
+                    <a class="header__link" href="#video">Преподаватели</a>
+                  </li>
+                  <li class="header__item">
+                    <a class="header__link" href="#certorder">Расписание</a>
+                  </li>
+                  <li class="header__item">
+                    <a class="header__link" href="#contacts">Программа</a>
+                  </li>
+                  <li class="header__item">
+                    <a class="header__link" href="#payment">Отзывы</a>
+                  </li>
+                  <li class="header__item">
+                    <a class="header__link" href="#payment">Контакты</a>
+                  </li>
+                  <li class="header__item">
+                    <a class="header__link blue" href="#payment">Записаться<img src="image/icon/icon_bron.svg" alt=""></a>
+                  </li>
+                  <li class="header__item">
+                    <a class="header__link blue" href="#payment">Подарочный сертификат<img src="image/icon/gift.svg" alt=""></a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="header__wrapper ">                  
+                <p class="header__call">Заказать<span>&nbsp;</span> звонок</p>
+                <a href="tel:88004444351" class="header__phone">8 (800) 444-43-51</a>
+              </div>
+          </div>
+          <div class="breads">
+            <div class="container-big">
+              <ul class="breads__list">
+                <li>
+                  <a href="/"><img src="image/svg/home.svg" alt=""></a>
+                </li>
+                <li>
+                  <a href="/">Курсы</a>
+                </li>
+                <li>
+                  <a href="/">Избавиться от страха</a>
+                </li>
+              </ul>         
+            </div>
+          </div>
         </div>
-      </div>
+      </div>      
+      
       <div class="container-big">
         <div class="header__body">   
           <a class="icon-certificate" href="#"><img src="image/icons/kg_icon_certificate_rotate.svg" alt=""></a>     
@@ -737,9 +742,11 @@
             <div class="footer__line">
               <img src="image/icon/icons_pay_sber.svg" alt="">
             </div>
-            <p class="footer__ps">© ИП Савельев Е.В. ОГРН 315665800016472</p>
-            <a href="#" class="footer__ps">Политика конфиденциальности</a>
-            <a href="#" class="footer__ps">Публичная оферта</a>
+            <div class="footer__ps-box">
+              <p class="footer__ps">© ИП Савельев Е.В. ОГРН 315665800016472</p>
+              <a href="#" class="footer__ps">Политика конфиденциальности</a>
+              <a href="#" class="footer__ps">Публичная оферта</a>
+            </div>          
           </div>
           <div class="footer__inner">
             <h4 class="footer__title">Очные курсы </h4>           
@@ -783,7 +790,7 @@
           <div class="footer__inner">
             <h4 class="footer__title">Адреса филиалов</h4>            
             <ul class="footer__list footer__list-black footer__list-up">
-              <li class="footer__list-title "><a class="footer-citylink orange" href="#">Москва</a><span>показать</span></li>
+              <li class="footer__list-title "><a class="footer-citylink orange" href="#">Москва</a><span>все адреса</span></li>
               <li class="footer__item">
                 <p class="footer__link" >ул. Шаболовка, д. 10, к. 2</p>
               </li>              
@@ -801,7 +808,7 @@
               </li>
             </ul>
             <ul class="footer__list footer__list-black">
-              <li class="footer__list-title footer__list-title-show"><a class="footer-citylink orange" href="#">Санкт-Петербург </a><span>показать</span></li>              
+              <li class="footer__list-title footer__list-title-show"><a class="footer-citylink orange" href="#">Санкт-Петербург </a><span>все адреса</span></li>              
               <li class="footer__item ">
                 <p class="footer__link" >Кузнечный переулок, д. 6</p>
               </li>
@@ -836,11 +843,14 @@
               полезную рассылку для развития своих 
               ораторских навыков
             </p>
-            <div class="wrappper-input input-error wrappper-input-ok">
-              <input class="footer__email" type="email" name="email" placeholder="Email">
-              <p class="wrappper-input-error">Ой, Вы ввели неполный Email</p>
+            <div class="footer__mob-email">
+              <div class="wrappper-input input-error wrappper-input-ok">
+                <input class="footer__email" type="email" name="email" placeholder="Email">
+                <p class="wrappper-input-error">Ой, Вы ввели неполный Email</p>
+              </div>
+              <button class="footer__btn"><span>Подписаться</span><img src="image/svg/tel.png" alt=""></button>
             </div>
-            <button class="footer__btn"><span>Подписаться</span><img src="image/svg/tel.png" alt=""></button>
+            
             <p class="footer__peron">Нажимая на кнопку, вы даете согласие на обработку <a href="#">персональных данных</a></p>
           </div>
         </div>
