@@ -1,3 +1,15 @@
+const navOffset = 140;
+  $(window).scroll(function(){
+    
+    const scrolled = $(this).scrollTop();
+
+    if (scrolled > navOffset){
+      $('.header').addClass('header-fixed');
+    } else if (scrolled < navOffset){
+      $('.header').removeClass('header-fixed');
+    }
+  });
+
 $('.header__call').click(function(){
   $('.window').addClass('window-active');
  });
@@ -26,7 +38,10 @@ $('.main__video-poster').click(function(){
 $('.start-curse__close').click(function(){        
     $('.start-curse').removeClass('active');
   });
+  
+$('.payment__input-phone').mask("+7 (999) 99-99-999");
 $('.nearcurse__phone').mask("+7 (999) 99-99-999");
+$('.questions__input').mask("+7 (999) 99-99-999");
 $('.recalll__slider').slick({
 slidesToShow: 2,
 slidesToScroll: 2,  
